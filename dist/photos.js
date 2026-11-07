@@ -1,188 +1,284 @@
-// Generated automatically from assets/music and assets/life.
+// Generated automatically. Add originals to assets/music or assets/life.
 window.portfolioPhotos = [
   {
-    "src": "assets/music/2.jpg",
+    "src": "generated/823e72dee56831ecaf1a-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/823e72dee56831ecaf1a-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/12.jpg",
+    "src": "generated/8d54f418376116ad257b-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/8d54f418376116ad257b-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/13.jpg",
+    "src": "generated/a89d97208e4701cef7c9-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/a89d97208e4701cef7c9-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/8405-02.jpg",
+    "src": "generated/1540cef7e5e170305197-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/1540cef7e5e170305197-view.webp",
+    "width": 637,
+    "height": 960
   },
   {
-    "src": "assets/music/8405-18.jpg",
+    "src": "generated/2aba1b6f6e4fbac8c599-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/2aba1b6f6e4fbac8c599-view.webp",
+    "width": 960,
+    "height": 637
   },
   {
-    "src": "assets/music/8405-19.jpg",
+    "src": "generated/8acb5609a96446531be8-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/8acb5609a96446531be8-view.webp",
+    "width": 637,
+    "height": 960
   },
   {
-    "src": "assets/music/8808_Cinestill800T_23.jpg",
+    "src": "generated/bd7b9be007578e4b9649-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/bd7b9be007578e4b9649-view.webp",
+    "width": 642,
+    "height": 960
   },
   {
-    "src": "assets/music/8808_Cinestill800T_29%20(1).jpg",
+    "src": "generated/75e8847c4ed2a8371ba5-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/75e8847c4ed2a8371ba5-view.webp",
+    "width": 642,
+    "height": 960
   },
   {
-    "src": "assets/music/8809_Cinestill800T_02.jpg",
+    "src": "generated/fedcf4716bc5269937e2-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/fedcf4716bc5269937e2-view.webp",
+    "width": 642,
+    "height": 960
   },
   {
-    "src": "assets/music/9530_Cinestill800T_27.jpg",
+    "src": "generated/f27119692ff29193eda3-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/f27119692ff29193eda3-view.webp",
+    "width": 643,
+    "height": 960
   },
   {
-    "src": "assets/music/9530_Cinestill800T_32.jpg",
+    "src": "generated/ac8604304869f3c3292e-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/ac8604304869f3c3292e-view.webp",
+    "width": 643,
+    "height": 960
   },
   {
-    "src": "assets/music/9531_Cinestill800T_10.jpg",
+    "src": "generated/fa9734ad75553977227e-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/fa9734ad75553977227e-view.webp",
+    "width": 835,
+    "height": 960
   },
   {
-    "src": "assets/music/9531_Cinestill800T_18.jpg",
+    "src": "generated/32405cb8b136be23c9a6-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/32405cb8b136be23c9a6-view.webp",
+    "width": 960,
+    "height": 643
   },
   {
-    "src": "assets/music/9531_Cinestill800T_19.jpg",
+    "src": "generated/c0cfe0767a756a877811-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/c0cfe0767a756a877811-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/9531_Cinestill800T_20.jpg",
+    "src": "generated/ff8ca412c7a3ad3fa94e-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/ff8ca412c7a3ad3fa94e-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/000097200029.jpg",
+    "src": "generated/ac025b60c1edb036b6f9-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/ac025b60c1edb036b6f9-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/000097210006.jpg",
+    "src": "generated/755af0a15d6752d1ac34-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/755af0a15d6752d1ac34-view.webp",
+    "width": 636,
+    "height": 960
   },
   {
-    "src": "assets/music/000097210021.jpg",
+    "src": "generated/05976070b98c3a5481d4-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/05976070b98c3a5481d4-view.webp",
+    "width": 636,
+    "height": 960
   },
   {
-    "src": "assets/music/260824000048890006.jpg",
+    "src": "generated/96f37296cfa645895a8d-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/96f37296cfa645895a8d-view.webp",
+    "width": 533,
+    "height": 520
   },
   {
-    "src": "assets/music/260824000048890007.jpg",
+    "src": "generated/391992613c329ab84985-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/391992613c329ab84985-view.webp",
+    "width": 406,
+    "height": 351
   },
   {
-    "src": "assets/music/260824000048890029_SnapseedCopy.jpg",
+    "src": "generated/529e438a0c8bb988dd4b-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/529e438a0c8bb988dd4b-view.webp",
+    "width": 636,
+    "height": 960
   },
   {
-    "src": "assets/music/260824000048890035_SnapseedCopy.jpg",
+    "src": "generated/95b4da6f4dcc523aa6ac-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/95b4da6f4dcc523aa6ac-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/insta3.jpg",
+    "src": "generated/c1c7b64c43c4b0be25d9-grid.webp",
     "category": "music",
-    "alt": "Music photograph"
+    "alt": "Music photograph",
+    "fullSrc": "generated/c1c7b64c43c4b0be25d9-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/music/insta5.jpg",
-    "category": "music",
-    "alt": "Music photograph"
-  },
-  {
-    "src": "assets/music/insta9.jpg",
-    "category": "music",
-    "alt": "Music photograph"
-  },
-  {
-    "src": "assets/life/6971_kodak200_21%20copy.jpg",
+    "src": "generated/510e0c700ff890c303fe-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/510e0c700ff890c303fe-view.webp",
+    "width": 960,
+    "height": 643
   },
   {
-    "src": "assets/life/7250-15.jpg",
+    "src": "generated/806f5cf4ed7ca44c2a11-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/806f5cf4ed7ca44c2a11-view.webp",
+    "width": 960,
+    "height": 637
   },
   {
-    "src": "assets/life/7644-11_VSCO.jpg",
+    "src": "generated/6604466b8a2e2001b934-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/6604466b8a2e2001b934-view.webp",
+    "width": 960,
+    "height": 636
   },
   {
-    "src": "assets/life/7645-14.jpg",
+    "src": "generated/97ce6bcfa761d3bbeecb-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/97ce6bcfa761d3bbeecb-view.webp",
+    "width": 636,
+    "height": 960
   },
   {
-    "src": "assets/life/7651_image_13%20copy.jpg",
+    "src": "generated/b13c127024fc521ce3e5-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/b13c127024fc521ce3e5-view.webp",
+    "width": 643,
+    "height": 960
   },
   {
-    "src": "assets/life/E6520101-14F1-4983-BC28-A1AB9C63901C.jpg",
+    "src": "generated/81351616d30df63db2c1-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/81351616d30df63db2c1-view.webp",
+    "width": 960,
+    "height": 765
   },
   {
-    "src": "assets/life/IMG_1289%20(1).JPG",
+    "src": "generated/7d8dbd830cd105362461-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/7d8dbd830cd105362461-view.webp",
+    "width": 637,
+    "height": 960
   },
   {
-    "src": "assets/life/IMG_1802.JPG",
+    "src": "generated/5adf648537c7526acc6a-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/5adf648537c7526acc6a-view.webp",
+    "width": 960,
+    "height": 643
   },
   {
-    "src": "assets/life/IMG_2933_VSCO.jpg",
+    "src": "generated/b9690f86cfccbc5b7a69-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/b9690f86cfccbc5b7a69-view.webp",
+    "width": 640,
+    "height": 960
   },
   {
-    "src": "assets/life/IMG_7705.JPG",
+    "src": "generated/b6967f455771cfd1af72-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/b6967f455771cfd1af72-view.webp",
+    "width": 637,
+    "height": 960
   },
   {
-    "src": "assets/life/IMG_7706.JPG",
+    "src": "generated/9b2c93d42ca0e0e8db15-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/9b2c93d42ca0e0e8db15-view.webp",
+    "width": 637,
+    "height": 960
   },
   {
-    "src": "assets/life/IMG_7982.JPG",
+    "src": "generated/8c9a3d9c37d3920525f7-grid.webp",
     "category": "life",
-    "alt": "Life photograph"
+    "alt": "Life photograph",
+    "fullSrc": "generated/8c9a3d9c37d3920525f7-view.webp",
+    "width": 637,
+    "height": 960
   }
 ];
+window.portfolioExtras = ["assets/contact.webp"];

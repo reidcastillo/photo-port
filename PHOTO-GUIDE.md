@@ -13,3 +13,6 @@ Run `git add dist scripts vercel.json PHOTO-GUIDE.md`, `git commit -m "Update po
 Vercel generates the photo list during deployment using `node scripts/build-photos.js`. Keep the output directory set to `dist`. If you previously set an empty Build Command override in the Vercel dashboard, remove that override or set it to `node scripts/build-photos.js`.
 
 `dist/photos.js` is generated; do not edit it. Run `node scripts/build-photos.js` to regenerate it when using another local server.
+
+## Optimized images
+Run `npm install` once after cloning. The build and preview automatically create lightweight gallery and larger viewer WebP copies in `dist/generated`. Your originals stay untouched. Commit package.json and package-lock.json alongside the scripts so Vercel can install Sharp.
