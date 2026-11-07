@@ -1,13 +1,61 @@
-const stage=document.querySelector('#bounce-stage'),photo=document.querySelector('#bouncing-photo'),pause=document.querySelector('#pause-motion');
-const descriptions=['Concert crowd','Portrait in natural light','Green mountain landscape','Microphone on stage','Portrait in blue light','Mountain beneath the stars','Festival lights','Outdoor portrait','Mountain peaks'];
-const images=descriptions.map((alt,i)=>{const image=new Image();image.src=`assets/${i+1}.jpg`;return {src:image.src,alt}});
-const preference=matchMedia('(prefers-reduced-motion: reduce)');let paused=preference.matches,elapsed=0,last=null,index=0;
-function updateControl(){pause.textContent=paused?'▷':'Ⅱ';pause.setAttribute('aria-label',paused?'Play animation':'Pause animation');pause.setAttribute('aria-pressed',String(paused))}
-pause.onclick=()=>{paused=!paused;updateControl()};preference.addEventListener('change',()=>{paused=preference.matches;updateControl()});updateControl();
-// Triangle waves reflect at the edges; the 12s and 8s crossings meet at a corner every 24s.
-function triangle(value){const phase=value%2;return phase<=1?phase:2-phase}
-function frame(now){if(last!==null&&!paused&&!document.hidden)elapsed+=Math.min((now-last)/1000,.1);last=now;
- const maxX=Math.max(0,stage.clientWidth-photo.clientWidth),maxY=Math.max(0,stage.clientHeight-photo.clientHeight);
- photo.style.transform=`translate3d(${triangle(elapsed/12)*maxX}px,${triangle(elapsed/8)*maxY}px,0)`;
- const next=Math.floor(elapsed/24)%images.length;if(next!==index){index=next;photo.src=images[index].src;photo.alt=images[index].alt}
- requestAnimationFrame(frame)}requestAnimationFrame(frame);
+const stage = document.querySelector('#bounce-stage');
+const library = window.portfolioPhotos;
+const bodies = [];
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+let nextPhoto = 0, lastTime = null;
+function dimensions() {
+  const width = Math.min(220, stage.clientWidth * .24, Math.sqrt(stage.clientWidth * stage.clientHeight * .23 / Math.max(1, bodies.length)));
+  return { width, height: width * .75 };
+}
+function confine(body, width, height) {
+  const right = Math.max(0, stage.clientWidth - width), bottom = Math.max(0, stage.clientHeight - height);
+  if (body.x < 0) { body.x = 0; body.vx = Math.abs(body.vx); }
+  if (body.x > right) { body.x = right; body.vx = -Math.abs(body.vx); }
+  if (body.y < 0) { body.y = 0; body.vy = Math.abs(body.vy); }
+  if (body.y > bottom) { body.y = bottom; body.vy = -Math.abs(body.vy); }
+}
+function addPhoto(event) {
+  if (!library.length) return;
+  const item = library[nextPhoto++ % library.length], image = document.createElement('img');
+  image.src = item.src; image.alt = item.alt; image.className = 'bouncing-photo'; image.draggable = false;
+  const rect = stage.getBoundingClientRect();
+  bodies.push({ image, x: event?.clientX != null ? event.clientX - rect.left : stage.clientWidth * .3,
+    y: event?.clientY != null ? event.clientY - rect.top : stage.clientHeight * .3,
+    vx: (Math.random() < .5 ? -1 : 1) * (65 + Math.random() * 35),
+    vy: (Math.random() < .5 ? -1 : 1) * (55 + Math.random() * 30) });
+  stage.append(image);
+}
+stage.addEventListener('click', addPhoto);
+stage.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); addPhoto(); } });
+function frame(time) {
+  const dt = lastTime === null || document.hidden ? 0 : Math.min((time - lastTime) / 1000, .025); lastTime = time;
+  const { width, height } = dimensions();
+  for (const b of bodies) {
+    if (!reducedMotion.matches) { b.x += b.vx * dt; b.y += b.vy * dt; }
+    confine(b, width, height);
+  }
+  // Resolve overlapping rectangles along their shallowest axis, exchanging equal-mass velocities.
+  for (let pass = 0; pass < 4; pass++) {
+    for (let i = 0; i < bodies.length; i++) for (let j = i + 1; j < bodies.length; j++) {
+      const a = bodies[i], b = bodies[j], dx = b.x - a.x, dy = b.y - a.y;
+      const overlapX = width - Math.abs(dx), overlapY = height - Math.abs(dy);
+      if (overlapX <= 0 || overlapY <= 0) continue;
+      if (overlapX < overlapY) {
+        const sign = dx >= 0 ? 1 : -1;
+        a.x -= sign * (overlapX / 2 + .1); b.x += sign * (overlapX / 2 + .1);
+        if ((a.vx - b.vx) * sign > 0) [a.vx, b.vx] = [b.vx, a.vx];
+      } else {
+        const sign = dy >= 0 ? 1 : -1;
+        a.y -= sign * (overlapY / 2 + .1); b.y += sign * (overlapY / 2 + .1);
+        if ((a.vy - b.vy) * sign > 0) [a.vy, b.vy] = [b.vy, a.vy];
+      }
+      confine(a, width, height); confine(b, width, height);
+    }
+  }
+  for (const b of bodies) {
+    b.image.style.width = width + 'px'; b.image.style.height = height + 'px';
+    b.image.style.transform = `translate3d(${b.x}px,${b.y}px,0)`;
+  }
+  requestAnimationFrame(frame);
+}
+addPhoto(); requestAnimationFrame(frame);
