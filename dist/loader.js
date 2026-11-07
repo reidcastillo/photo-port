@@ -8,7 +8,6 @@ window.photosReady = new Promise(resolve => {
   const error = document.querySelector('#load-error');
   const retry = document.querySelector('#load-retry');
   const sources = [...new Set([
-    ...(window.portfolioExtras || []),
     ...(window.portfolioPhotos || []).flatMap(photo => [photo.src, photo.fullSrc].filter(Boolean)),
     ...Array.from(document.querySelectorAll('img[src]'), image => image.getAttribute('src')).filter(Boolean)
   ])];

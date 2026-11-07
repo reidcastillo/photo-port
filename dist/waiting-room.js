@@ -1,5 +1,4 @@
-(async () => {
-await window.photosReady;
+(() => {
 const stage = document.querySelector('#bounce-stage');
 const library = window.portfolioPhotos;
 const bodies = [];
