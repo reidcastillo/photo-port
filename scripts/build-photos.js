@@ -32,7 +32,7 @@ async function generate() {
     photo.fullSrc = `generated/${names[1]}`;
     photo.width = meta.width; photo.height = meta.height;
   }
-  fs.writeFileSync(path.join(root, 'dist', 'photos.js'), '// Generated automatically. Add originals to assets/music or assets/life.\nwindow.portfolioPhotos = ' + JSON.stringify(photos, null, 2) + ';\nwindow.portfolioExtras = ' + JSON.stringify(fs.existsSync(path.join(root, 'dist/assets/contact.webp')) ? ['assets/contact.webp'] : []) + ';\n');
+  fs.writeFileSync(path.join(root, 'dist', 'photos.js'), 'window.portfolioPhotos = ' + JSON.stringify(photos, null, 2) + ';\nwindow.portfolioExtras = ' + JSON.stringify(fs.existsSync(path.join(root, 'dist/assets/contact.webp')) ? ['assets/contact.webp'] : []) + ';\n');
   for (const name of fs.readdirSync(directory)) if (/^[a-f0-9]{20}-(grid|view)\.webp$/.test(name) && !used.has(name)) fs.unlinkSync(path.join(directory, name));
   return photos;
 }

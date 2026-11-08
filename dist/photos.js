@@ -1,4 +1,3 @@
-// Generated automatically. Add originals to assets/music or assets/life.
 window.portfolioPhotos = [
   {
     "src": "generated/823e72dee56831ecaf1a-grid.webp",

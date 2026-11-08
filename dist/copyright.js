@@ -1,4 +1,3 @@
-// A compact notice in place of the image context menu.
 const copyrightNotice = document.createElement('div');
 copyrightNotice.className = 'copyright-notice';
 copyrightNotice.setAttribute('role', 'status');
@@ -20,7 +19,6 @@ document.addEventListener('contextmenu', event => {
   if (!photo) return;
   event.preventDefault();
   dismissCopyright();
-  // The popover top layer also works above the full-screen photo dialog.
   if (!usePopover) (photo.closest('dialog') || document.body).append(copyrightNotice);
   copyrightNotice.hidden = false;
   if (usePopover) copyrightNotice.showPopover();

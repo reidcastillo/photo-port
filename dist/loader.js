@@ -1,4 +1,3 @@
-// Keep decoded images alive for the gallery and subsequent full-screen viewing.
 window.loadedPhotos = new Map();
 window.fullPhotoURLs = new Map();
 window.photosReady = new Promise(resolve => {
@@ -25,7 +24,6 @@ window.photosReady = new Promise(resolve => {
         const response = await fetch(src, { signal: controller.signal });
         if (!response.ok) throw new Error('Image unavailable');
         const blob = await response.blob();
-        // Retain the entire viewer file without keeping every large bitmap decoded in RAM.
         window.fullPhotoURLs.set(src, URL.createObjectURL(blob)); progress();
       } finally { clearTimeout(timer); }
       return;
@@ -48,7 +46,6 @@ window.photosReady = new Promise(resolve => {
   async function run() {
     retry.disabled = true; error.hidden = true;
     const queue = sources.filter(src => !ready(src));
-    // Limit simultaneous full-resolution decodes to avoid a memory/CPU spike.
     await Promise.all(Array.from({ length: Math.min(6, queue.length) }, async () => {
       while (queue.length) { const src = queue.shift(); try { await load(src); } catch {} }
     }));
@@ -59,7 +56,6 @@ window.photosReady = new Promise(resolve => {
     progress();
     await new Promise(done => setTimeout(done, 180));
     resolve();
-    // Let the gallery attach its decoded images before revealing the page.
     requestAnimationFrame(() => requestAnimationFrame(() => {
       document.documentElement.classList.remove('site-loading'); loader.remove();
     }));

@@ -35,7 +35,6 @@ function frame(time) {
     if (!reducedMotion.matches) { b.x += b.vx * dt; b.y += b.vy * dt; }
     confine(b, width, height);
   }
-  // Resolve overlapping rectangles along their shallowest axis, exchanging equal-mass velocities.
   for (let pass = 0; pass < 4; pass++) {
     for (let i = 0; i < bodies.length; i++) for (let j = i + 1; j < bodies.length; j++) {
       const a = bodies[i], b = bodies[j], dx = b.x - a.x, dy = b.y - a.y;
