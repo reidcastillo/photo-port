@@ -57,7 +57,7 @@ footer{border:0;justify-content:flex-end;padding:35px 0 24px;margin-top:12px;fon
 #gallery img{width:100%;height:auto;max-height:none}
 @media(max-width:600px){#gallery{columns:1}#gallery .photo{margin-bottom:10px}}
 
-.contact-details h1{margin-bottom:12px}.contact-bio{font-size:16px;line-height:1.5;margin:0 0 20px}.contact-email{display:block}.contact-instagram{display:flex;align-items:center;justify-content:flex-start;width:44px;height:44px;margin-top:16px}.contact-instagram:hover{color:#8ace00}
+.contact-details h1{margin-bottom:12px}.contact-bio{font-family:Portfolio Gothic,Arial,sans-serif;font-weight:800;font-size:16px;line-height:1.5;margin:0 0 20px}.contact-email{display:block}.contact-instagram{display:flex;align-items:center;justify-content:flex-start;width:44px;height:44px;margin-top:16px}.contact-instagram:hover{color:#8ace00}
 
 .contact-details h1{font-family:Portfolio Gothic,Arial,sans-serif;font-weight:800;letter-spacing:0}.gallery-footer{justify-content:space-between;align-items:center}.gallery-copyright{font-family:Portfolio Gothic,Arial,sans-serif;font-weight:800;font-size:10px;letter-spacing:0;color:#888}
 

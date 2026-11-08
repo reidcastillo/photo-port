@@ -57,14 +57,6 @@ window.portfolioPhotos = [
     "height": 637
   },
   {
-    "src": "generated/8acb5609a96446531be8-grid.webp",
-    "category": "music",
-    "alt": "Music photograph",
-    "fullSrc": "generated/8acb5609a96446531be8-view.webp",
-    "width": 637,
-    "height": 960
-  },
-  {
     "src": "generated/bd7b9be007578e4b9649-grid.webp",
     "category": "music",
     "alt": "Music photograph",
@@ -127,14 +119,6 @@ window.portfolioPhotos = [
     "fullSrc": "generated/9f4c9799ad3c1ec8955d-view.webp",
     "width": 960,
     "height": 636
-  },
-  {
-    "src": "generated/1d488917ea7869eff05b-grid.webp",
-    "category": "music",
-    "alt": "Music photograph",
-    "fullSrc": "generated/1d488917ea7869eff05b-view.webp",
-    "width": 636,
-    "height": 960
   },
   {
     "src": "generated/c0cfe0767a756a877811-grid.webp",
@@ -281,20 +265,12 @@ window.portfolioPhotos = [
     "height": 636
   },
   {
-    "src": "generated/d39e6cbea8eb1d7cf899-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/d39e6cbea8eb1d7cf899-view.webp",
-    "width": 636,
-    "height": 960
-  },
-  {
-    "src": "generated/b87922106716e79fe78d-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/b87922106716e79fe78d-view.webp",
+    "src": "generated/0c5e65a66580027566e6-grid.webp",
+    "category": "music",
+    "alt": "Music photograph",
+    "fullSrc": "generated/0c5e65a66580027566e6-view.webp",
     "width": 960,
-    "height": 636
+    "height": 640
   },
   {
     "src": "generated/510e0c700ff890c303fe-grid.webp",
@@ -303,14 +279,6 @@ window.portfolioPhotos = [
     "fullSrc": "generated/510e0c700ff890c303fe-view.webp",
     "width": 960,
     "height": 643
-  },
-  {
-    "src": "generated/806f5cf4ed7ca44c2a11-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/806f5cf4ed7ca44c2a11-view.webp",
-    "width": 960,
-    "height": 637
   },
   {
     "src": "generated/6604466b8a2e2001b934-grid.webp",
@@ -329,30 +297,6 @@ window.portfolioPhotos = [
     "height": 960
   },
   {
-    "src": "generated/97ce6bcfa761d3bbeecb-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/97ce6bcfa761d3bbeecb-view.webp",
-    "width": 636,
-    "height": 960
-  },
-  {
-    "src": "generated/b13c127024fc521ce3e5-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/b13c127024fc521ce3e5-view.webp",
-    "width": 643,
-    "height": 960
-  },
-  {
-    "src": "generated/81351616d30df63db2c1-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/81351616d30df63db2c1-view.webp",
-    "width": 960,
-    "height": 765
-  },
-  {
     "src": "generated/e2e819d78f8957d705c8-grid.webp",
     "category": "life",
     "alt": "Life photograph",
@@ -361,43 +305,11 @@ window.portfolioPhotos = [
     "height": 636
   },
   {
-    "src": "generated/d24bcff6113b73808c13-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/d24bcff6113b73808c13-view.webp",
-    "width": 960,
-    "height": 637
-  },
-  {
-    "src": "generated/ef3649980ca41785eb62-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/ef3649980ca41785eb62-view.webp",
-    "width": 643,
-    "height": 960
-  },
-  {
     "src": "generated/7d8dbd830cd105362461-grid.webp",
     "category": "life",
     "alt": "Life photograph",
     "fullSrc": "generated/7d8dbd830cd105362461-view.webp",
     "width": 637,
-    "height": 960
-  },
-  {
-    "src": "generated/5adf648537c7526acc6a-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/5adf648537c7526acc6a-view.webp",
-    "width": 960,
-    "height": 643
-  },
-  {
-    "src": "generated/b9690f86cfccbc5b7a69-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/b9690f86cfccbc5b7a69-view.webp",
-    "width": 640,
     "height": 960
   },
   {
@@ -439,14 +351,6 @@ window.portfolioPhotos = [
     "fullSrc": "generated/8c9a3d9c37d3920525f7-view.webp",
     "width": 637,
     "height": 960
-  },
-  {
-    "src": "generated/228fce661930d7a7954c-grid.webp",
-    "category": "life",
-    "alt": "Life photograph",
-    "fullSrc": "generated/228fce661930d7a7954c-view.webp",
-    "width": 960,
-    "height": 643
   }
 ];
 window.portfolioExtras = ["assets/contact.webp"];
